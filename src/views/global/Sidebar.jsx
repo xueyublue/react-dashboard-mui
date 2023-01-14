@@ -53,6 +53,7 @@ export default function Sidebar() {
         },
         "& .pro-inner-item:hover": {
           color: "#868dfb !important",
+          transition: "0.25s ease-in-out",
         },
         "& .pro-menu-item.active": {
           color: "#6870fa !important",
