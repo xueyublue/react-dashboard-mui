@@ -73,7 +73,9 @@ export default function Sidebar() {
           >
             {!isCollapsed && (
               <Box display="flex" justifyContent="space-between" alignItems="center" ml="15px">
-                <Typography>React MUI Dashboard</Typography>
+                <Typography variant="h5" color={colors.grey[100]}>
+                  React MUI Dashboard
+                </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlined />
                 </IconButton>
