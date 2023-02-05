@@ -6,7 +6,7 @@ export default function Header({ title, subTitle }) {
   const colors = tokens(theme.palette.mode);
   return (
     <Box>
-      <Typography variant="h2" color={colors.grey[100]} fintWeight="bold" sx={{ mb: "5px" }}>
+      <Typography variant="h2" color={colors.grey[100]} fontWeight="bold" sx={{ mb: "5px" }}>
         {title}
       </Typography>
       <Typography variant="h5" color={colors.greenAccent[400]}>
