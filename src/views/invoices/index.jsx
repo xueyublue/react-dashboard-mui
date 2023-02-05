@@ -5,10 +5,13 @@ import { tokens } from "../../theme";
 import PageContainer from "../../components/PageContainer";
 import { mockDataInvoices } from "../../data/mockData";
 import Header from "../../components/Header";
+import useWindowDimension from "../../hooks/useWindowDimension";
 
 export default function Invoices() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const { height } = useWindowDimension();
+  const tableBoxHeight = height - 162;
   const columns = [
     { field: "id", headerName: "ID" },
     { field: "name", headerName: "Name", flex: 1, cellClassName: "name-column-cell" },
@@ -27,7 +30,8 @@ export default function Invoices() {
       <Header title="INVOICES" subTitle="List of Invoice Balances" />
       <Box
         mt={2}
-        height="75vh"
+        // height="75vh"
+        height={`${tableBoxHeight}px`}
         sx={{
           "& .MuiDataGrid-root": { border: "none" },
           "& .MuiDataGrid-cell": { borderBottom: "none" },

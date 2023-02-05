@@ -8,10 +8,13 @@ import { tokens } from "../../theme";
 import PageContainer from "../../components/PageContainer";
 import { mockDataTeam } from "../../data/mockData";
 import Header from "../../components/Header";
+import useWindowDimension from "../../hooks/useWindowDimension";
 
 export default function Team() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const { height } = useWindowDimension();
+  const tableBoxHeight = height - 162;
   const columns = [
     { field: "id", headerName: "ID" },
     { field: "name", headerName: "Name", flex: 1, cellClassName: "name-column-cell" },
@@ -49,7 +52,7 @@ export default function Team() {
       <Header title="TEAM" subTitle="Managing the Team Members" />
       <Box
         mt={2}
-        height="75vh"
+        height={`${tableBoxHeight}px`}
         sx={{
           "& .MuiDataGrid-root": { border: "none" },
           "& .MuiDataGrid-cell": { borderBottom: "none" },

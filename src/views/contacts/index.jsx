@@ -1,14 +1,17 @@
 import React from "react";
-import { Box, Toolbar, useTheme } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import PageContainer from "../../components/PageContainer";
 import { mockDataContacts } from "../../data/mockData";
 import Header from "../../components/Header";
+import useWindowDimension from "../../hooks/useWindowDimension";
 
 export default function Contacts() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const { height } = useWindowDimension();
+  const tableBoxHeight = height - 162;
   const columns = [
     { field: "id", headerName: "ID", flex: 0.5 },
     { field: "registrarId", headerName: "Registrar ID" },
@@ -25,7 +28,7 @@ export default function Contacts() {
       <Header title="CONTACTS" subTitle="List of Contacts for Future Reference" />
       <Box
         mt={2}
-        height="75vh"
+        height={`${tableBoxHeight}px`}
         sx={{
           "& .MuiDataGrid-root": { border: "none" },
           "& .MuiDataGrid-cell": { borderBottom: "none" },
