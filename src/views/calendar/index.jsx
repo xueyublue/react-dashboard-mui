@@ -38,23 +38,31 @@ export default function Calendar() {
       <Header title="CALENDAR" subTitle="Full Calendar Interactive Page" />
       <Box mt={2} display="flex" justifyContent="space-between">
         {/* Calendar Sidebar */}
-        <Box flex="1 1 20%" backgroundColor={colors.primary[400]} padding="15px" borderRadius="4px">
+        <Box flex="1 1 20%" backgroundColor={colors.primary[400]} p="15px" borderRadius="4px">
           <Typography variant="h5">Events</Typography>
           <List>
             {currentEvents.map((event) => (
-              <listItem
+              <ListItem
                 key={event.id}
-                sx={{ backgroundColor: colors.greenAccent[500], margin: "10px 0", borderRadius: "2px" }}
+                sx={{
+                  backgroundColor: colors.greenAccent[500],
+                  margin: "10px 0",
+                  borderRadius: "2px",
+                }}
               >
                 <ListItemText
                   primary={event.title}
                   secondary={
                     <Typography>
-                      {formatDate(event.start, { year: "numeric", month: "short", day: "numeric" })}
+                      {formatDate(event.start, {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      })}
                     </Typography>
                   }
                 />
-              </listItem>
+              </ListItem>
             ))}
           </List>
         </Box>
@@ -80,12 +88,12 @@ export default function Calendar() {
               {
                 id: "12315",
                 title: "All-day event",
-                date: "2022-09-14",
+                date: "2023-01-14",
               },
               {
                 id: "5123",
                 title: "Timed event",
-                date: "2022-09-28",
+                date: "2023-01-29",
               },
             ]}
           />
