@@ -102,7 +102,8 @@ export default function Sidebar() {
               </Box>
             </Box>
           )}
-          {/* MENU ITEMS */}
+          {/* !MENU ITEMS */}
+          {/* remove 10% padding to make open sidemenu to be inline with collapsed sidemenu */}
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item title="Dashboard" to="/" icon={<HomeOutlinded />} selected={selected} setSelected={setSelected} />
             <Typography variant="h6" color={colors.grey[300]} sx={{ m: "15px 0 5px 20px" }}>
