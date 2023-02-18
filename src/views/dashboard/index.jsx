@@ -18,24 +18,23 @@ export default function Dashboard() {
     <PageContainer>
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subTitle="Welcome to your dashboard" />
-      </Box>
-      {/* Download Button */}
-      <Box display="flex" justifyContent="end">
-        <Button
-          sx={{
-            backgroundColor: colors.blueAccent[700],
-            color: colors.grey[100],
-            fontSize: "14px",
-            fontWeight: "bold",
-            padding: "10px 20px",
-          }}
-        >
-          <DownloadOutlined sx={{ mr: "10px" }} />
-          Download Report
-        </Button>
+        <Box>
+          <Button
+            sx={{
+              backgroundColor: colors.blueAccent[700],
+              color: colors.grey[100],
+              fontSize: "14px",
+              fontWeight: "bold",
+              padding: "10px 20px",
+            }}
+          >
+            <DownloadOutlined sx={{ mr: "10px" }} />
+            Download Report
+          </Button>
+        </Box>
       </Box>
       {/* GRID */}
-      <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gridAutoRows="140px" gap="20px" mt={2}>
+      <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gridAutoRows="140px" gap="20px" mt={1}>
         {/* Row 1-1 */}
         <Box
           gridColumn="span 3"
@@ -100,6 +99,7 @@ export default function Dashboard() {
             icon={<Traffic sx={{ color: colors.greenAccent[600], fontSize: "26px" }} />}
           />
         </Box>
+        {/* ROW 2 */}
       </Box>
     </PageContainer>
   );
