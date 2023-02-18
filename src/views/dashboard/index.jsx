@@ -19,7 +19,6 @@ export default function Dashboard() {
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
-
         <Box>
           <Button
             sx={{
@@ -37,8 +36,8 @@ export default function Dashboard() {
       </Box>
 
       {/* GRID & CHARTS */}
-      <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gridAutoRows="140px" gap="20px">
-        {/* ROW 1 */}
+      <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gridAutoRows="140px" gap="20px" mt={1}>
+        {/* ROW 1-1 */}
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -54,6 +53,7 @@ export default function Dashboard() {
             icon={<Email sx={{ color: colors.greenAccent[600], fontSize: "26px" }} />}
           />
         </Box>
+        {/* ROW 1-2 */}
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -69,6 +69,7 @@ export default function Dashboard() {
             icon={<PointOfSale sx={{ color: colors.greenAccent[600], fontSize: "26px" }} />}
           />
         </Box>
+        {/* ROW 1-3 */}
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -84,6 +85,7 @@ export default function Dashboard() {
             icon={<PersonAdd sx={{ color: colors.greenAccent[600], fontSize: "26px" }} />}
           />
         </Box>
+        {/* ROW 1-4 */}
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -100,7 +102,7 @@ export default function Dashboard() {
           />
         </Box>
 
-        {/* ROW 2 */}
+        {/* ROW 2-1 */}
         <Box gridColumn="span 8" gridRow="span 2" backgroundColor={colors.primary[400]}>
           <Box mt="25px" p="0 30px" display="flex " justifyContent="space-between" alignItems="center">
             <Box>
@@ -121,6 +123,7 @@ export default function Dashboard() {
             <LineChart isDashboard={true} />
           </Box>
         </Box>
+        {/* ROW 2-2 */}
         <Box gridColumn="span 4" gridRow="span 2" backgroundColor={colors.primary[400]} overflow="auto">
           <Box
             display="flex"
@@ -157,7 +160,7 @@ export default function Dashboard() {
           ))}
         </Box>
 
-        {/* ROW 3 */}
+        {/* ROW 3-1 */}
         <Box gridColumn="span 4" gridRow="span 2" backgroundColor={colors.primary[400]} p="30px">
           <Typography variant="h5" fontWeight="600">
             Campaign
@@ -170,6 +173,7 @@ export default function Dashboard() {
             <Typography>Includes extra misc expenditures and costs</Typography>
           </Box>
         </Box>
+        {/* ROW 3-2 */}
         <Box gridColumn="span 4" gridRow="span 2" backgroundColor={colors.primary[400]}>
           <Typography variant="h5" fontWeight="600" sx={{ padding: "30px 30px 0 30px" }}>
             Sales Quantity
@@ -178,6 +182,7 @@ export default function Dashboard() {
             <BarChart isDashboard={true} />
           </Box>
         </Box>
+        {/* ROW 3-3 */}
         <Box gridColumn="span 4" gridRow="span 2" backgroundColor={colors.primary[400]} padding="30px">
           <Typography variant="h5" fontWeight="600" sx={{ marginBottom: "15px" }}>
             Geography Based Traffic
