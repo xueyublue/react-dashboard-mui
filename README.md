@@ -1,6 +1,6 @@
 ## How to run this project?
-1. git clone https://github.com/xueyublue/react-mui-dashboard.git
-2. cd react-mui-dashboard
+1. git clone https://github.com/xueyublue/react-dashboard-mui.git
+2. cd react-dashboard-mui
 3. npm install
 4. npm run start
 
