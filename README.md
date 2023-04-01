@@ -4,6 +4,9 @@
 3. npm install
 4. npm run start
 
+## How this project structured?
+<img width="268" alt="image" src="https://user-images.githubusercontent.com/18031774/229260670-8852ce02-65e5-4d71-9774-84d3d6876741.png">
+
 ## Pages
 ### Dashboard - Dark Theme
 ![image](https://user-images.githubusercontent.com/18031774/220142928-e91c3438-9632-40bd-9fd8-4010d73743bf.png)
