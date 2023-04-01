@@ -9,6 +9,8 @@
 ![image](https://user-images.githubusercontent.com/18031774/220142928-e91c3438-9632-40bd-9fd8-4010d73743bf.png)
 ### Dashboard - Light Theme
 ![image](https://user-images.githubusercontent.com/18031774/220143204-c6fdacf7-6a3a-45e2-8edf-6844a2c8cacd.png)
+### (Hide Side Bar)
+![image](https://user-images.githubusercontent.com/18031774/229260338-3d5cdf31-9463-435a-8acf-07425f6dd50c.png)
 ### Manage Team
 ![image](https://user-images.githubusercontent.com/18031774/229260029-4dd227dd-143e-4441-b919-0d235ba2b790.png)
 ### Contacts Information
